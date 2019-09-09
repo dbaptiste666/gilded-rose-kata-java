@@ -10,11 +10,16 @@ class GildedRose {
 
     static Map<String, ItemStrategy> itemStrategyMap = new HashMap<>();
 
+    public final static String SULFURAS = "Sulfuras, Hand of Ragnaros";
+    public final static String BRIE = "Aged Brie";
+    public final static String BACKSTAGE_PASSES_ITEM = "Backstage passes to a TAFKAL80ETC concert";
+    public final static String CONJURED_ITEM = "Conjured";
+
     static {
-        itemStrategyMap.put("Aged Brie", new AgedBrieItemStrategy());
-        itemStrategyMap.put("Sulfuras, Hand of Ragnaros", new SulfurasItemStrategy());
-        itemStrategyMap.put("Backstage passes to a TAFKAL80ETC concert", new BackstagePassItemStrategy());
-        itemStrategyMap.put("Conjured", new ConjuredItemStrategy());
+        itemStrategyMap.put(BRIE, new AgedBrieItemStrategy());
+        itemStrategyMap.put(SULFURAS, new SulfurasItemStrategy());
+        itemStrategyMap.put(BACKSTAGE_PASSES_ITEM, new BackstagePassItemStrategy());
+        itemStrategyMap.put(CONJURED_ITEM, new ConjuredItemStrategy());
     }
 
     public GildedRose(Item[] items) {

@@ -219,6 +219,16 @@ public class GildedRoseTest {
     }
 
     @Test
+    public void checkQualityForConjuredItemsBeforeSellInPassed2(){
+        Item[] items = new Item[] { new Item("Conjured", 3, 6) };
+        GildedRose app = new GildedRose(items);
+
+        app.updateQuality();
+
+        assertEquals(4, app.items[0].quality);
+    }
+
+    @Test
     public void checkQualityForConjuredItemsAfterSellInPassed(){
         Item[] items = new Item[] { new Item("Conjured", -2, 10) };
         GildedRose app = new GildedRose(items);

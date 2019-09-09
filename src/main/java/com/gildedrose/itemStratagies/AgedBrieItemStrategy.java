@@ -2,6 +2,9 @@ package com.gildedrose.itemStratagies;
 
 import com.gildedrose.Item;
 
+/**
+ * The Strategy for "Aged Brie" Item.
+ */
 public class AgedBrieItemStrategy implements ItemStrategy  {
     @Override
     public Item updateItem(Item item) {

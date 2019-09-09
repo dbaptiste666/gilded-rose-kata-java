@@ -1,7 +1,9 @@
 package com.gildedrose.itemStratagies;
 
 import com.gildedrose.Item;
-
+/**
+ * The Strategy for default Item.
+ */
 public class NormalItemStrategy implements ItemStrategy {
 
     @Override

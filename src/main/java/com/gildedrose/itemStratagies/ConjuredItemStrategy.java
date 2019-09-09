@@ -2,6 +2,9 @@ package com.gildedrose.itemStratagies;
 
 import com.gildedrose.Item;
 
+/**
+ * The Strategy for "Conjured" Item.
+ */
 public class ConjuredItemStrategy implements ItemStrategy {
 
     @Override
